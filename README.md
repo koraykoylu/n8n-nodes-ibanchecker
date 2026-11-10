@@ -57,7 +57,7 @@ A free key covers 100 requests a month. A free account on the same address, at [
 
 ## Compatibility
 
-Built and tested with n8n 2.x (see the version history for the exact version each release was tested on). The node is declarative and has no runtime dependencies.
+Tested with n8n 2.47.3. The node is declarative and has no runtime dependencies.
 
 ## Usage
 
