@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-ibanchecker",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Finance & Accounting"],
+	"alias": ["IBAN", "BIC", "SWIFT", "SEPA", "bank account", "ibanchecker"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/koraykoylu/n8n-nodes-ibanchecker?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/koraykoylu/n8n-nodes-ibanchecker?tab=readme-ov-file"
+			}
+		]
+	}
+}

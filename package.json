@@ -1,0 +1,61 @@
+{
+	"name": "n8n-nodes-ibanchecker",
+	"version": "0.1.0",
+	"description": "n8n community node for the ibanchecker.cash API: validate IBANs, extract IBANs from text, read country IBAN formats and look up BIC/SWIFT codes",
+	"license": "MIT",
+	"homepage": "https://ibanchecker.cash/integrations",
+	"keywords": [
+		"n8n-community-node-package",
+		"iban",
+		"iban-validation",
+		"bic",
+		"swift",
+		"sepa",
+		"finance",
+		"accounting"
+	],
+	"author": {
+		"name": "Koray Köylü",
+		"email": "api@ibanchecker.cash"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/koraykoylu/n8n-nodes-ibanchecker.git"
+	},
+	"bugs": {
+		"url": "https://github.com/koraykoylu/n8n-nodes-ibanchecker/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist",
+		"!dist/tsconfig.tsbuildinfo"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/IbanCheckerApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/IbanChecker/IbanChecker.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.57.0",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
