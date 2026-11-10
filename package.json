@@ -3,6 +3,9 @@
 	"version": "0.1.0",
 	"description": "n8n community node for the ibanchecker.cash API: validate IBANs, extract IBANs from text, read country IBAN formats and look up BIC/SWIFT codes",
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"homepage": "https://ibanchecker.cash/integrations",
 	"keywords": [
 		"n8n-community-node-package",
